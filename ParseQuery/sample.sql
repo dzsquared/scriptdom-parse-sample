@@ -1,0 +1,1 @@
+declare @p0001 nvarchar(73) set @p0001 = N'UPDATE session SET ss_last_used = @LastUsed WHERE ss_sequence = @sequence' declare @p0002 nvarchar(32) set @p0002 = N'@LastUsed datetime,@sequence int' declare @P0003 datetime set @P0003 = '20240305 15:53:09.093' declare @P0004 int set @P0004 = 9482 exec sp_executesql @p0001, @p0002, @LastUsed = @P0003, @sequence = @P0004
