@@ -18,7 +18,7 @@ exec sp_executesql @p0001, @p0002, @LastUsed = @P0003, @sequence = @P0004
 
 Using [ScriptDOM](https://learn.microsoft.com/en-us/dotnet/api/microsoft.sqlserver.transactsql.scriptdom?view=sql-transactsql-161) we can parse the T-SQL script and extract different versions of the SQL statement executed by sp_executesql.
 
-> [!INFO]
+> [!TIP]
 > ScriptDOM is open source and available on [GitHub](https://github.com/microsoft/sqlscriptdom).
 
 ## Option 1: what is the SQL statement passed to sp_executesql?
